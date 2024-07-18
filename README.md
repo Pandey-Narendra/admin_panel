@@ -100,8 +100,9 @@ Follow these steps to set up the project locally:
 1. Register a new user:
 
     URL: POST http://127.0.0.1:8000/api/register
+    
+    ```bash
     Body: 
-        ```bash
         {
         "name": "Test User",
         "email": "testuser@gmail.com",
@@ -226,5 +227,5 @@ Follow these steps to set up the project locally:
         Body:
             ```bash
             {
-                "role": "admin"
+                "name": "admin"
             }
