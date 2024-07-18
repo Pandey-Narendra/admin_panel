@@ -1,6 +1,14 @@
 
 This repository contains a Laravel project for an Admin and User management system, including product management functionality.
 
+![admin panel images](data/admin_panel.png)
+![admin panel images](data/admin_panel-1.png)
+![admin panel images](data/admin_panel-2.png)
+![admin panel images](data/admin_panel-3.png)
+![admin panel images](data/admin_panel-4.png)
+![admin panel images](data/admin_panel-5.png)
+![admin panel images](data/admin_panel-6.png)
+
 ## Installation
 
 Follow these steps to set up the project locally:
@@ -113,68 +121,75 @@ Follow these steps to set up the project locally:
 2. Login:
 
     URL: POST http://127.0.0.1:8000/api/login
+
+    ```bash
     Body:
-        ```bash
         {
-        "email": "testuser@gmail.com",
-        "password": "password"
+            "email": "testuser@gmail.com",
+            "password": "password"
         }
 
-   # Note: Copy the token from the response for authenticated requests.
+   Note: Copy the token from the response for authenticated requests.
 
 3. Get user profile:
 
     URL: GET http://127.0.0.1:8000/api/user/profile
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 
 4. Logout:
 
     URL: POST http://127.0.0.1:8000/api/logout
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 
 5. Get admin profile (admin only):
 
     URL: GET http://127.0.0.1:8000/api/admin/profile
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 6. Update admin profile (admin only):
 
     URL: PUT http://127.0.0.1:8000/api/admin/profile
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
+    ```bash
     Body:
-        ```bash
         {
-        "name": "Updated Admin",
-        "email": "admin_updated@gmail.com"
+            "name": "Updated Admin",
+            "email": "admin_updated@gmail.com"
         }
 
 7. List products (admin only):
 
     URL: GET http://127.0.0.1:8000/api/admin/products
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 8. Create a new product (admin only):
 
     URL: POST http://127.0.0.1:8000/api/admin/products
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
+    ```bash
     Body:
-        ```bash
         {
             "name": "New Product",
             "description": "Product description",
@@ -184,19 +199,21 @@ Follow these steps to set up the project locally:
 9. Get product details (admin only):
 
     URL: GET http://127.0.0.1:8000/api/admin/products/{id}
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 10. Update product details (admin only):
 
     URL: PUT http://127.0.0.1:8000/api/admin/products/{id}
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
+    ```bash
     Body:
-        ```bash
         {
             "name": "Updated Product",
             "description": "Updated description",
@@ -206,26 +223,29 @@ Follow these steps to set up the project locally:
 11. Delete a product (admin only):
 
     URL: DELETE http://127.0.0.1:8000/api/admin/products/{id}
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 12. Get all the users (authenticated, admin only)
 
     URL: GET http://127.0.0.1:8000/api/admin/users
+
+    ```bash
     Headers:
-        ```bash
         Authorization: Bearer <token>
 
 13. Update users role (authenticated, admin only)
 
     URL: PUT http://127.0.0.1:8000/api/admin/users/{id}/role
+
+        ```bash
         Headers:
-            ```bash
             Authorization: Bearer <token>
 
+        ```bash
         Body:
-            ```bash
             {
                 "name": "admin"
             }
