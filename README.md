@@ -247,5 +247,5 @@ Follow these steps to set up the project locally:
         Authorization: Bearer <token>
     Body:
         {
-            "name": "admin"
+            "role": "admin"
         }
