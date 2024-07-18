@@ -1,6 +1,8 @@
 
 This repository contains a Laravel project for an Admin and User management system, including product management functionality.
 
+# all the data regarding SQL file and Postman collection is present inside data folder
+
 ![admin panel images](data/admin_panel.png)
 ![admin panel images](data/admin_panel-1.png)
 ![admin panel images](data/admin_panel-2.png)
