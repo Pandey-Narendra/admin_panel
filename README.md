@@ -243,8 +243,6 @@ Follow these steps to set up the project locally:
     ```bash
     Headers:
         Authorization: Bearer <token>
-
-    ```bash
     Body:
         {
             "name": "admin"
