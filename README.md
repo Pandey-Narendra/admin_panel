@@ -240,12 +240,12 @@ Follow these steps to set up the project locally:
 
     URL: PUT http://127.0.0.1:8000/api/admin/users/{id}/role
 
-        ```bash
-        Headers:
-            Authorization: Bearer <token>
+    ```bash
+    Headers:
+        Authorization: Bearer <token>
 
-        ```bash
-        Body:
-            {
-                "name": "admin"
-            }
+    ```bash
+    Body:
+        {
+            "name": "admin"
+        }
