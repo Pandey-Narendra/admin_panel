@@ -16,8 +16,8 @@ Follow these steps to set up the project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your/repository.git
-   cd repository-name
+   git clone https://github.com/Pandey-Narendra/admin_panel.git
+   cd admin_panel
 
 2. Install Composer dependencies:
 
